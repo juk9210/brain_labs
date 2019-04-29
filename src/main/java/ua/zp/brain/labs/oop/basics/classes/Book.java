@@ -72,5 +72,18 @@ public class Book {
     public static String getReaderCategory() {
         return READER_CATEGORY;
     }
-
+    public void turn(int page){
+        page = 215;
+        System.out.println("Open the certain page");
+    }
+    public void chapterList(){
+        System.out.println("Show chapter list");
+    }
+    public void define(){
+        System.out.println("This page belongs to this chapter");
+    }
+    public void turn(){
+        int chapter = 2;
+        System.out.println("Open the certain chapter");
+    }
 }

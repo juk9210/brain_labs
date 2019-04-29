@@ -36,4 +36,13 @@ public class StoreCostumer {
     public static String getNATIONALITY() {
         return NATIONALITY;
     }
+    public void add(){
+        System.out.println("Add product to cart");
+    }
+    public void view(){
+        System.out.println("View bonus accumulation");
+    }
+    public void buy(){
+        System.out.println("Buy goods");
+    }
 }

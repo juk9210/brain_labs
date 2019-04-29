@@ -72,4 +72,13 @@ public class Auto {
     public static String getDriveType() {
         return DRIVE_TYPE;
     }
+    public void turnOn(){
+        System.out.println("Turn on headlights");
+    }
+    public void brake(){
+        System.out.println("Stop the car");
+    }
+    public void go(){
+        System.out.println("Go by car");
+    }
 }

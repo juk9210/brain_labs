@@ -28,4 +28,19 @@ public class PostOffice {
         return LOCALIZATION;
     }
 
+    public void accept() {
+        System.out.println("Reception parcel list");
+    }
+
+    public void packAndShip() {
+        System.out.println("Packing and shipping parcel list");
+    }
+
+    public static void volumeCalculation(double volume) {
+        int length = 5;
+        int height = 15;
+        int width = 7;
+        volume = length * height * width / 5000;
+        System.out.println("Volume weight of parcel: "+volume);
+    }
 }
