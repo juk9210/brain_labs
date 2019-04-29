@@ -4,9 +4,14 @@ package ua.zp.brain.labs.oop.basics.classes;
  *
  */
 public class Auto {
-    public String typeOfTransport;
-    public String bodyType;
-    public String countryProducer;
+    private String typeOfTransport;
+    private String bodyType;
+    private String countryProducer;
+    private String brand;
+    private String model;
+    private int yearOfRelease;
+    private String color;
+    private static final String DRIVE_TYPE = "automaton";
 
     public String getTypeOfTransport() {
         return typeOfTransport;
@@ -64,9 +69,7 @@ public class Auto {
         this.color = color;
     }
 
-    public String brand;
-    public String model;
-    public int yearOfRelease;
-    public String color;
-    public static final String DRIVE_TYPE = "automaton";
+    public static String getDriveType() {
+        return DRIVE_TYPE;
+    }
 }
