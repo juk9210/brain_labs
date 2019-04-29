@@ -4,8 +4,10 @@ package ua.zp.brain.labs.oop.basics.classes;
  *
  */
 public class StoreCostumer {
-    public String sex;
-    public int age;
+    private String sex;
+    private int age;
+    private String size;
+    private static final String NATIONALITY = "asian";
 
     public String getSex() {
         return sex;
@@ -31,6 +33,7 @@ public class StoreCostumer {
         this.size = size;
     }
 
-    public String size;
-    public static final String NATIONALITY = "asian";
+    public static String getNATIONALITY() {
+        return NATIONALITY;
+    }
 }

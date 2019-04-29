@@ -4,8 +4,9 @@ package ua.zp.brain.labs.oop.basics.classes;
  *
  */
 public class PostOffice {
-    public int branchNumber;
-    public String own;
+    private int branchNumber;
+    private String own;
+    private static final String LOCALIZATION = "regional";
 
     public int getBranchNumber() {
         return branchNumber;
@@ -26,7 +27,5 @@ public class PostOffice {
     public static String getLOCALIZATION() {
         return LOCALIZATION;
     }
-
-    public static final String LOCALIZATION = "regional";
 
 }

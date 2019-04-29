@@ -11,6 +11,7 @@ public class Book {
     private String bookLanguage;
     private String edition;
     private int pages;
+    private static final String READER_CATEGORY = "adult";
 
     public String getAuthor() {
         return author;
@@ -72,5 +73,4 @@ public class Book {
         return READER_CATEGORY;
     }
 
-    private static final String READER_CATEGORY = "adult";
 }
