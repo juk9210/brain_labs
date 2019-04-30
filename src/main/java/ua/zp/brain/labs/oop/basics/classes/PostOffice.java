@@ -36,11 +36,11 @@ public class PostOffice {
         System.out.println("Packing and shipping parcel list");
     }
 
-    public static void volumeCalculation(double volume) {
-        int length = 5;
-        int height = 15;
-        int width = 7;
-        volume = length * height * width / 5000;
-        System.out.println("Volume weight of parcel: "+volume);
+    public static void volumeCalculation() {
+        double length = 5;
+        double height = 15;
+        double width = 7;
+        double volume = length * height * width / 5000;
+        System.out.println("Volume weight of parcel: " + volume);
     }
 }
