@@ -4,7 +4,6 @@ package ua.zp.brain.labs.oop.basics.classes;
 import static ua.zp.brain.labs.oop.basics.classes.Auto.getDriveType;
 import static ua.zp.brain.labs.oop.basics.classes.Book.getReaderCategory;
 import static ua.zp.brain.labs.oop.basics.classes.PostOffice.getLOCALIZATION;
-import static ua.zp.brain.labs.oop.basics.classes.PostOffice.volumeCalculation;
 import static ua.zp.brain.labs.oop.basics.classes.StoreCostumer.getNATIONALITY;
 
 public class Main {
@@ -24,6 +23,7 @@ public class Main {
                 "\nGenre of book: " + book.getBookGenre() + "\nLanguage: " + book.getBookLanguage() + "\nEdition: " +
                 book.getEdition() + "\nPages: " + book.getPages() + "\nPublication Year: " + book.getPublicationYear() +
                 "\nReader category: " + getReaderCategory());
+        System.out.println(" ");
         PostOffice UkrPost = new PostOffice();
         UkrPost.setBranchNumber(25);
         UkrPost.setOwn("state");
@@ -32,6 +32,7 @@ public class Main {
         PostOffice.volumeCalculation();
         System.out.println("Name of class: PostOffice" + "\nNumber of Post Office: " + UkrPost.getBranchNumber() + "\nOwn: "
                 + UkrPost.getOwn() + "\nLocalization: " + getLOCALIZATION());
+        System.out.println(" ");
         StoreCostumer Arien = new StoreCostumer();
         Arien.setAge(35);
         Arien.setSex("man");
@@ -41,6 +42,7 @@ public class Main {
         Arien.view();
         System.out.println("Name of class: StoreCostumer" + "\nCostumer age: " + Arien.getAge() + "\nCostumer sex: " +
                 Arien.getSex() + "\nCostumer size: " + Arien.getSize() + "\nNationality: " + getNATIONALITY());
+        System.out.println(" ");
         Auto auto = new Auto();
         auto.setBodyType("sedan");
         auto.setBrand("Kia");
