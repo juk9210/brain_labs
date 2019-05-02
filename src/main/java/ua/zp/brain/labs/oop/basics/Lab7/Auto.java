@@ -1,9 +1,10 @@
-package ua.zp.brain.labs.oop.basics.classes;
+package ua.zp.brain.labs.oop.basics.Lab7;
 
 /**
- *
+ * Create class Auto.Describe private fields and we create methods.
+ * *@author Shakhov Yevhen.
  */
-public class Auto {
+class Auto {
     private String typeOfTransport;
     private String bodyType;
     private String countryProducer;
@@ -11,8 +12,10 @@ public class Auto {
     private String model;
     private int yearOfRelease;
     private String color;
+    //Add a field with a constant
     private static final String DRIVE_TYPE = "automaton";
 
+    // Add for private fields do get / set
     public String getTypeOfTransport() {
         return typeOfTransport;
     }
@@ -72,13 +75,17 @@ public class Auto {
     public static String getDriveType() {
         return DRIVE_TYPE;
     }
-    public void turnOn(){
+
+    //Add methods for this class.
+    public void turnOn() {
         System.out.println("Turn on headlights");
     }
-    public void brake(){
+
+    public void brake() {
         System.out.println("Stop the car");
     }
-    public void go(){
+
+    public void go() {
         System.out.println("Go by car");
     }
 }

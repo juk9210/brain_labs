@@ -1,14 +1,18 @@
-package ua.zp.brain.labs.oop.basics.classes;
+package ua.zp.brain.labs.oop.basics.Lab7;
 
 /**
+ * Create class PostOficce.Describe private fields and we create methods.
  *
+ * @author Shakhov Yevhen.
  */
-public class StoreCostumer {
+class StoreCostumer {
     private String sex;
     private int age;
     private String size;
+    //Add a field with a constant
     private static final String NATIONALITY = "asian";
 
+    // Add for private fields do get / set
     public String getSex() {
         return sex;
     }
@@ -36,13 +40,17 @@ public class StoreCostumer {
     public static String getNATIONALITY() {
         return NATIONALITY;
     }
-    public void add(){
+
+    //Add methods for this class.
+    public void add() {
         System.out.println("Add product to cart");
     }
-    public void view(){
+
+    public void view() {
         System.out.println("View bonus accumulation");
     }
-    public void buy(){
+
+    public void buy() {
         System.out.println("Buy goods");
     }
 }

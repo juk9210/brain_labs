@@ -1,7 +1,9 @@
-package ua.zp.brain.labs.oop.basics.classes;
+package ua.zp.brain.labs.oop.basics.Lab7;
 
 /**
+ * Create class Book.Describe private fields and we create methods.
  *
+ * @author Shakhov Yevhen.
  */
 public class Book {
     private String author;
@@ -11,13 +13,17 @@ public class Book {
     private String bookLanguage;
     private String edition;
     private int pages;
+    //Add a field with a constant
     private static final String READER_CATEGORY = "adult";
+    // Add for private fields do get / set
 
     public String getAuthor() {
+
         return author;
     }
 
     public void setAuthor(String author) {
+
         this.author = author;
     }
 
@@ -72,18 +78,25 @@ public class Book {
     public static String getReaderCategory() {
         return READER_CATEGORY;
     }
-    public void turn(int page){
-        page = 215;
-        System.out.println("Open the certain page");
+    //Add methods for this class.
+
+    public int turn(int page) {
+        page = 210;
+        System.out.println("Open the certain page: " + page);
+        return page;
     }
-    public void chapterList(){
+
+    public void chapterList() {
         System.out.println("Show chapter list");
     }
-    public void define(){
+
+    public void define() {
         System.out.println("This page belongs to this chapter");
     }
-    public void turn(){
-        int chapter = 2;
-        System.out.println("Open the certain chapter");
+
+    //Overload method turn
+    public double turn(double chapter) {
+        System.out.println("Open the certain chapter: " + chapter);
+        return chapter;
     }
 }
