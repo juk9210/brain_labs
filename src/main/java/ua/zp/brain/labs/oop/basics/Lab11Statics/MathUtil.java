@@ -1,10 +1,10 @@
-package ua.zp.brain.labs.oop.basics.statics;
+package ua.zp.brain.labs.oop.basics.Lab11Statics;
 
 /**
  * Simple class with static methods, for demonstrate working with cycles in Java.
  * Help to calc several math sequences.
  *
- * @author Vladimir Bratchikov
+ * @author Shakhov Yevhen.
  */
 public class MathUtil {
 
@@ -14,9 +14,9 @@ public class MathUtil {
      * @param values values sequence
      * @return sum result.
      */
-    public static int sum(int ...values) {
+    public static int sum(int... values) {
         int result = 0;
-        for(int a: values) {
+        for (int a : values) {
             result += a;
         }
         return result;
@@ -28,9 +28,11 @@ public class MathUtil {
      * @param values values sequence
      * @return multiply result.
      */
-    public static int mul(int ...values) {
-        int result = 0;
-        // TODO  complete this.
+    public static int mul(int... values) {
+        int result = 1;
+        for (int a : values) {
+            result *= a;
+        }
         return result;
     }
 
@@ -38,12 +40,14 @@ public class MathUtil {
      * Print all numbers unless {@param interrupt }
      *
      * @param skipValue skipped value
-     * @param values  values sequence
+     * @param values    values sequence
      */
-    public static void printWithSkip(int skipValue, int ...values) {
-        //TODO modify this method to complete the output of characters but skip the specified value.
-        for(int a: values) {
-            System.out.print(a+" ");
+    public static void printWithSkip(int skipValue, int... values) {
+        for (int a : values) {
+            if (a == skipValue) {
+                continue;
+            }
+            System.out.print(a + " ");
         }
     }
 
@@ -51,12 +55,14 @@ public class MathUtil {
      * Print all numbers before reaching {@param interrupt }
      *
      * @param interruptValue force end value
-     * @param values  values sequence
+     * @param values         values sequence
      */
-    public static void printToValue(int interruptValue, int ...values) {
-        //TODO modify this method to complete the output of characters upon reaching the specified interrupt parameter
-        for(int a: values) {
-            System.out.print(a+" ");
+    public static void printToValue(int interruptValue, int... values) {
+        for (int a : values) {
+            if (a == interruptValue) {
+                break;
+            }
+            System.out.print(a + " ");
         }
     }
 
@@ -68,35 +74,41 @@ public class MathUtil {
      */
     public static int factorial(int a) {
         int result = 1;
-        // TODO complete this. Calc FACTORIAL for 'a'
+        for (int i = 1; i <= a; i++) {
+            result = result * i;
+        }
         return result;
     }
 
     /**
      * Calc harmonic progression for value with ratio.
      *
-     * @param a base value
-     * @param q ratio
+     * @param a     base value
+     * @param q     ratio
      * @param count calc count
      * @return harmonic progression result.
      */
     public static int harmonicProgression(int a, int q, int count) {
         int result = a;
-        // TODO complete this. Calc Harmonic Progression.
+        for (int i = 0; i < count - 1; i++) {
+            result *= q;
+        }
         return result;
     }
 
     /**
      * Calc harmonic arithmetic for value with ratio.
      *
-     * @param a base value
-     * @param q ratio
+     * @param a     base value
+     * @param q     ratio
      * @param count calc count
      * @return arithmetic progression result.
      */
     public static int arithmeticProgression(int a, int q, int count) {
         int result = a;
-        // TODO complete this. Calc Arithmetic Progression.
+        for (int i = 0; i < count - 1; i++) {
+            result = result + q;
+        }
         return result;
     }
 
