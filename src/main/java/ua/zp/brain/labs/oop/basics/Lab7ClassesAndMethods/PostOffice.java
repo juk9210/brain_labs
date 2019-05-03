@@ -1,4 +1,4 @@
-package ua.zp.brain.labs.oop.basics.Lab7;
+package ua.zp.brain.labs.oop.basics.Lab7ClassesAndMethods;
 
 /**
  * Create class PostOficce.Describe private fields and we create methods.
