@@ -1,7 +1,11 @@
-package ua.zp.brain.labs.oop.basics.Lab9;
+package ua.zp.brain.labs.oop.basics.Lab9Constructor;
 
 /**
+ * Create a class Pizza
+ * Describe private fields. For fields we do get/set
+ * Create constructor with parameters - name,composition,cost,diametr.
  *
+ * @author Shakhov Yevhen.
  */
 public class Pizza {
     private String name;
@@ -13,9 +17,17 @@ public class Pizza {
         this.name = name;
         this.composition = composition;
         this.cost = cost;
-        Circle circle = new Circle(diametr);
-        System.out.println(name+" "+composition+" "+cost+" "+diametr);
+        this.basis = new Circle(diametr / 2);
+        System.out.println("Name: " + name + "\tComposition: " + composition + "\tCost: " + cost + "\tDiametr: " + diametr);
 
+    }
+
+    public double getDiameter() {
+        return basis.getRadius() * 2;
+    }
+
+    public void setDiameter(double diameter) {
+        basis.setRadius(diameter / 2);
     }
 
     public String getName() {
