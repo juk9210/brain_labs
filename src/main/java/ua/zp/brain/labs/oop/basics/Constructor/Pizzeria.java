@@ -1,4 +1,4 @@
-package ua.zp.brain.labs.oop.basics.Lab9Constructor;
+package ua.zp.brain.labs.oop.basics.Constructor;
 
 /**
  * Create an array of different pizzas of class Pizza with parameters.

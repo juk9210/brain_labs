@@ -1,4 +1,4 @@
-package ua.zp.brain.labs.oop.basics.Lab7ClassesAndMethods;
+package ua.zp.brain.labs.oop.basics.ClassesAndMethods;
 
 /**
  * Create class Auto.Describe private fields and we create methods.

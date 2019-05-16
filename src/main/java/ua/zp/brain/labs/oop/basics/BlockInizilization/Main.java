@@ -1,4 +1,4 @@
-package ua.zp.brain.labs.oop.basics.Lab10BlockInizilization;
+package ua.zp.brain.labs.oop.basics.BlockInizilization;
 
 /**
  * Create a object newLibrary of class Library.Make a check for the presence of an empty cell in the array. If there
