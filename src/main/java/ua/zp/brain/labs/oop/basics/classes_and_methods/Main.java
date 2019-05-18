@@ -1,9 +1,9 @@
-package ua.zp.brain.labs.oop.basics.ClassesAndMethods;
+package ua.zp.brain.labs.oop.basics.classes_and_methods;
 
-import static ua.zp.brain.labs.oop.basics.ClassesAndMethods.Auto.getDriveType;
-import static ua.zp.brain.labs.oop.basics.ClassesAndMethods.Book.getReaderCategory;
-import static ua.zp.brain.labs.oop.basics.ClassesAndMethods.PostOffice.getLOCALIZATION;
-import static ua.zp.brain.labs.oop.basics.ClassesAndMethods.StoreCostumer.getNATIONALITY;
+import static ua.zp.brain.labs.oop.basics.classes_and_methods.Auto.getDriveType;
+import static ua.zp.brain.labs.oop.basics.classes_and_methods.Book.getReaderCategory;
+import static ua.zp.brain.labs.oop.basics.classes_and_methods.PostOffice.getLOCALIZATION;
+import static ua.zp.brain.labs.oop.basics.classes_and_methods.StoreCostumer.getNATIONALITY;
 
 /**
  * Create class Main to create objects. Initialize the object fields. And display the data in the console.

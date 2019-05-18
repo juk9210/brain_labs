@@ -1,11 +1,11 @@
-package ua.zp.brain.labs.oop.basics.Statics;
+package ua.zp.brain.labs.oop.basics.statics;
 /**
  * Check methods of class MathUtil
  *
  * @author Shakhov Yevhen.
  */
 
-import static ua.zp.brain.labs.oop.basics.Statics.MathUtil.*;
+import static ua.zp.brain.labs.oop.basics.statics.MathUtil.*;
 
 public class Test {
 

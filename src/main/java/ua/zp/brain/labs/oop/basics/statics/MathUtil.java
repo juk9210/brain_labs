@@ -1,4 +1,4 @@
-package ua.zp.brain.labs.oop.basics.Statics;
+package ua.zp.brain.labs.oop.basics.statics;
 
 /**
  * Simple class with static methods, for demonstrate working with cycles in Java.

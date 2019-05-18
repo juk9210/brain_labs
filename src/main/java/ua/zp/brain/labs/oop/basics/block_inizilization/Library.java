@@ -1,4 +1,4 @@
-package ua.zp.brain.labs.oop.basics.BlockInizilization;
+package ua.zp.brain.labs.oop.basics.block_inizilization;
 
 /**
  * Create a class Library.Describe the fields.Create for them get/set.
