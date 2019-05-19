@@ -49,8 +49,9 @@ public class Passport {
                 '}';
     }
 
-    public void changeOwner(String newOwner) {
-        PassportUtil.changeOwner(newOwner, this);
+    public Passport changeOwner(String newOwner) {
+        PassportUtil.changeOwner(newOwner,this);
+        return null;
     }
 
 }

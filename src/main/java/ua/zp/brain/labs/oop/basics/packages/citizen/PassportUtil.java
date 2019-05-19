@@ -1,7 +1,7 @@
 package ua.zp.brain.labs.oop.basics.packages.citizen;
 
 public class PassportUtil {
-    public static void Registration(Passport male, Passport female) {
+    public static void marriageRegistrate(Passport male, Passport female) {
         male.setSpouseID(female.getId());
         female.setSpouseID(male.getId());
     }
