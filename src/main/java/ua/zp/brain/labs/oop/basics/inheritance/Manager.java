@@ -3,17 +3,17 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 import java.util.Objects;
 
 public class Manager extends Employee {
-    private String departement;
+    private String department;
 
-    void consult() {
+    private void consult() {
         System.out.println("Manager advises the client");
     }
 
-    void discounts() {
+    private void discounts() {
         System.out.println("Manager talks about discounts");
     }
 
-    void advise() {
+    private void advise() {
         System.out.println("Manager advises the client");
     }
 
@@ -25,12 +25,12 @@ public class Manager extends Employee {
         advise();
     }
 
-    public String getDepartement() {
-        return departement;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setDepartement(String departement) {
-        this.departement = departement;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
 
@@ -40,23 +40,23 @@ public class Manager extends Employee {
         if (!(o instanceof Manager)) return false;
         if (!super.equals(o)) return false;
         Manager manager = (Manager) o;
-        return Objects.equals(departement, manager.departement);
+        return Objects.equals(department, manager.department);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), departement);
+        return Objects.hash(super.hashCode(), department);
     }
 
     @Override
     public String toString() {
         return "Manager{" +
-                "departement='" + departement + '\'' +
+                "departement='" + department + '\'' +
                 '}';
     }
 
    Manager(String name, int numberPhone, int salary, String dateOfReceipt, String prusence, String departement) {
         super(name, numberPhone, salary, dateOfReceipt, prusence);
-        this.departement = departement;
+        this.department = departement;
     }
 }

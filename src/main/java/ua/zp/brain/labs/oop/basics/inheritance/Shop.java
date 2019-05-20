@@ -2,17 +2,17 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 
 public class Shop {
     private String nameOfShop;
-    private String adress;
-    Client cl1;
-    Manager m1;
-    Cashier c1;
-    SecurityGuard s1;
+    private String address;
+    private Client cl1;
+    private Manager m1;
+    private Cashier c1;
+    private SecurityGuard s1;
 
-    void open() {
+    private void open() {
         System.out.println("The shop opens");
     }
 
-    void lunch() {
+    private void lunch() {
         System.out.println("Shop closes for lunch");
     }
 
@@ -28,15 +28,47 @@ public class Shop {
         this.nameOfShop = nameOfShop;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    Shop(Manager m1, Client cl1, Cashier c1, SecurityGuard s1) {
+    public Client getCl1() {
+        return cl1;
+    }
+
+    public void setCl1(Client cl1) {
+        this.cl1 = cl1;
+    }
+
+    public Manager getM1() {
+        return m1;
+    }
+
+    public void setM1(Manager m1) {
+        this.m1 = m1;
+    }
+
+    public Cashier getC1() {
+        return c1;
+    }
+
+    public void setC1(Cashier c1) {
+        this.c1 = c1;
+    }
+
+    public SecurityGuard getS1() {
+        return s1;
+    }
+
+    public void setS1(SecurityGuard s1) {
+        this.s1 = s1;
+    }
+
+    private Shop(Manager m1, Client cl1, Cashier c1, SecurityGuard s1) {
         this.m1 = m1;
         this.cl1 = cl1;
         this.c1 = c1;

@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Cashier extends Employee {
     private int cashNumber;
 
-    void count() {
+    private void count() {
         System.out.println("The cashier counts the money");
     }
 
@@ -45,7 +45,7 @@ public class Cashier extends Employee {
                 '}';
     }
 
-    public Cashier(String name, int numberPhone, int salary, String dateOfReceipt, String prusence, int cashNumber) {
+    Cashier(String name, int numberPhone, int salary, String dateOfReceipt, String prusence, int cashNumber) {
         super(name, numberPhone, salary, dateOfReceipt, prusence);
         this.cashNumber = cashNumber;
     }

@@ -1,7 +1,7 @@
 package ua.zp.brain.labs.oop.basics.inheritance;
 
 public class SecurityGuard extends Employee {
-    void talk() {
+    private void talk() {
         System.out.println("The guard is talking on the radio");
     }
 
@@ -16,7 +16,7 @@ public class SecurityGuard extends Employee {
         return "SecurityGuard{}";
     }
 
-    public SecurityGuard(String name, int numberPhone, int salary, String dateOfReceipt, String prusence) {
+    SecurityGuard(String name, int numberPhone, int salary, String dateOfReceipt, String prusence) {
         super(name, numberPhone, salary, dateOfReceipt, prusence);
     }
 }
