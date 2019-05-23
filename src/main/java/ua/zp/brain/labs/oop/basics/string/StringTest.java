@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class StringTest {
     public static void main(String[] args) {
+//        PART1
         String str = "Hello";
 
         String str1 = new String("Alex");
@@ -17,7 +18,7 @@ public class StringTest {
         StringBuilder builder = new StringBuilder("a");
         String str4 = new String(builder);
 
-//        PART1
+//        PART2
         String fruit = "Апельсин,Яблоко,Гранат,Груша";
         String[] arr1;
         arr1 = fruit.split(",");
@@ -38,16 +39,19 @@ public class StringTest {
 
         System.out.println(arr1[maxi].toLowerCase().substring(0, 3));
 
-//        PART2
+//        PART3
         String str5 = " Я_новая_строка   ";
         System.out.println(str5.trim().replace('_', ' '));
 
-//        PART3
+//        PART4
         Scanner a = new Scanner(System.in);
         System.out.println("Вы ввели: ");
         String str6 = a.nextLine();
         if(str6.equalsIgnoreCase("Запуск")){
             System.out.println("Запускаем процесс");
+        }
+        if(str6.endsWith("Завершен")){
+            System.out.println("Процесс завершен");
         }
     }
 }
