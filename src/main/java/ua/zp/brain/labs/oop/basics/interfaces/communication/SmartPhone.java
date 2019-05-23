@@ -16,7 +16,7 @@ class SmartPhone implements Caller, EmailSender {
 
     public String editMail(String mail) {
         System.out.println("Edit massege: "+mail);
-        return mail;
+        return null;
     }
 }
 
