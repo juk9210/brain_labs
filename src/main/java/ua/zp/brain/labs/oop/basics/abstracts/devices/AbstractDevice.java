@@ -24,4 +24,7 @@ public abstract class AbstractDevice {
 
     abstract void powerOff();
 
+    AbstractDevice() {
+        powerOn();
+    }
 }

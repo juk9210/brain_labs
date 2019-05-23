@@ -1,24 +1,56 @@
 package ua.zp.brain.labs.oop.basics.abstracts.devices;
 
 public class Test {
-//
-//    public static void main(String[] args) {
-//
-//        System.out.println("\nTry equals two iPads:");
-//        Pad p1 = new Pad("iPad", 20_000);
-//        Pad p2 = new Pad("iPad", 20_000);
-//        System.out.println(p1.equals(p2));
-//
-//        System.out.println("\nTry Pad toString:");
-//        System.out.println(p1);
-//
-//
-//        System.out.println("\nTry own equals and toString:");
-//        // TODO this is not work! Create equals and hashCode in SmartPhone class
-//        // TODO create toString
-//        SmartPhone s1 = new SmartPhone("Galaxy S8", 10_000);
-//        SmartPhone s2 = new SmartPhone("Galaxy S8", 10_000);
-//        System.out.println(s1.equals(s2));
-//
-//    }
+
+    public static void main(String[] args) {
+        SmartPhone samsung = new SmartPhone(2, "TFT", "Android");
+        samsung.setName("Samsung");
+        samsung.setSerial(151981);
+        System.out.println("Smartphone - " + samsung.getName() + " has a serial: " + samsung.getSerial() + ", a simcount: " +
+                samsung.getDisplay() + ", a OS: " + samsung.getOs() + ". And his work: \n");
+        samsung.powerOn();
+        samsung.call();
+        samsung.runApp();
+        samsung.powerOff();
+        System.out.println();
+
+        DialPhone saturn = new DialPhone(true);
+        saturn.setName("Saturn");
+        saturn.setSerial(8657);
+        System.out.println("Dialphone - " + saturn.getName() + " has a serial: " + saturn.getSerial() + ". And his work: \n");
+        saturn.powerOn();
+        saturn.call();
+        saturn.autoAnswer();
+        saturn.powerOff();
+        System.out.println();
+
+        Multicooker lg = new Multicooker();
+        lg.setName("LG");
+        lg.setSerial(354345);
+        System.out.println("Multicooker - " + lg.getName() + " has a serial: " + lg.getSerial() + ". And his work: \n");
+        lg.powerOn();
+        lg.switchProgram(5);
+        lg.cook();
+        lg.powerOff();
+        System.out.println();
+
+        Oven azov = new Oven();
+        azov.setName("Azov");
+        azov.setSerial(16516);
+        System.out.println("Oven - " + azov.getName() + " has a serial: " + azov.getSerial() + ". And his work: \n");
+        azov.powerOn();
+        azov.initTimer(30);
+        azov.cook();
+        azov.powerOff();
+        System.out.println();
+
+        offAll(samsung, lg, azov, saturn);
+    }
+
+    static void offAll(AbstractDevice... devices) {
+        for (AbstractDevice d : devices) {
+            d.powerOff();
+        }
+    }
+
 }

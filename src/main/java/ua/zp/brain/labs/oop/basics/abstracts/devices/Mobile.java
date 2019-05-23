@@ -35,5 +35,9 @@ public class Mobile extends AbstractPhone {
         System.out.println("Go to the phone book, select a contact and call");
     }
 
+    Mobile(int simCount, String display) {
+        this.simCount = simCount;
+        this.display = display;
+    }
 }
 

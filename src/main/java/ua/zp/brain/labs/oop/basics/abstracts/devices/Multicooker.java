@@ -11,11 +11,13 @@ public class Multicooker extends AbstractMulticooker {
     void powerOff() {
         super.powerOff();
     }
+
     @Override
-    void cook(){
+    void cook() {
         System.out.println("Cook soup");
     }
-    void switchProgram(int program){
-        System.out.println("Choose the program number: "+program);
+
+    void switchProgram(int program) {
+        System.out.println("Choose the program number: " + program);
     }
 }

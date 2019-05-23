@@ -1,30 +1,22 @@
 package ua.zp.brain.labs.oop.basics.interfaces.communication;
 
 class SmartPhone implements Caller, EmailSender {
-
-    public void openApp(String appName) {
-        System.out.println("Now app" + appName + " opened!");
-    }
-
-    @Override
     public void call(String contact) {
-        System.out.println("Select in list and call to " + contact);
+        System.out.println("Go to the phone book, find "+contact+" and call");
     }
 
-    @Override
     public String createMail(String mail) {
-        return "some mail " + mail;
+        System.out.println("Create message: "+mail);
+        return null;
     }
 
-    @Override
     public void sendMail(String mail) {
-        System.out.println(mail + " sended by internet!");
+        System.out.println("Send massage: "+mail);
     }
 
-    @Override
-    public void editMail(String mail) {
-        System.out.println("new mail " + mail);
+    public String editMail(String mail) {
+        System.out.println("Edit massege: "+mail);
+        return mail;
     }
-
 }
 

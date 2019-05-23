@@ -2,31 +2,27 @@ package ua.zp.brain.labs.oop.basics.interfaces.communication;
 
 public class Main {
     public static void main(String[] args) {
-        SmartPhone nokia = new SmartPhone();
-        nokia.openApp("Angry Birds");
-        nokia.call("Vasya");
-        nokia.sendMail("qwerty");
+      SmartPhone nokia = new SmartPhone();
+      nokia.call("Andry");
+      nokia.createMail("Hello Andry.How are you?");
+      nokia.sendMail("Push the button - send");
+      nokia.editMail("Hello Andry.You are home?");
+        System.out.println();
 
-        Caller galaxyS7 = new SmartPhone();
-        galaxyS7.call("Boss");
-        // Интерфейс не имеет метода openApp, необходимо явное приведение
-        ((SmartPhone) galaxyS7).openApp("Viber");
+      HomePhone hp = new HomePhone();
+      hp.call("Michail");
+        System.out.println();
 
-        Caller panasonic = new HomePhone();
-        panasonic.call("911");
-        //panasonic.openApp(); // ERROR! Такого метода нет у HomePhone
+       Post ukr = new Post();
+       ukr.createMail("I am home");
+       ukr.sendMail("Roll in an envelope and send");
+        System.out.println();
 
-        MailSender iphone8 = new SmartPhone();
-        MailSender ukrposhta = new Post();
-
-        generalSendMail(nokia);
-        generalSendMail(((MailSender) galaxyS7));
-        // generalSendMail(((HomePhone)panasonic)); // ERROR! HomePhone не имеет нужного интерфейса
-        generalSendMail(iphone8);
-        generalSendMail(ukrposhta);
+        sendAll(nokia,ukr);
     }
-
-    public static void generalSendMail(MailSender sender) {
-        sender.sendMail("--This is mail-- from" + sender.getClass());
-    }
+static void sendAll(MailSender ... send){
+        for(MailSender s : send){
+            s.sendMail("Hello");
+        }
+}
 }

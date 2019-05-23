@@ -1,7 +1,7 @@
 package ua.zp.brain.labs.oop.basics.interfaces.communication;
 
-public interface EmailSender extends MailSender{
+interface EmailSender extends MailSender{
 
-    void editMail(String mail);
+    String editMail(String mail);
 
 }

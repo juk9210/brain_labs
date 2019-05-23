@@ -10,19 +10,26 @@ public class DialPhone extends AbstractPhone {
     public void setHasAnswerPhone(boolean hasAnswerPhone) {
         this.hasAnswerPhone = hasAnswerPhone;
     }
+
     @Override
-    void powerOn(){
+    void powerOn() {
         System.out.println("Turn on the socket,the phone works");
     }
+
     @Override
-    void powerOff(){
+    void powerOff() {
         System.out.println("Turn out the socket, the phone does not work");
     }
+
     @Override
-    void call(){
+    void call() {
         System.out.println("Pick up the phone,dial the number and call");
     }
-    void autoAnswer(){
+
+    void autoAnswer() {
         System.out.println("The phone automatically picks up the phone");
+    }
+    DialPhone(boolean hasAnswerPhone){
+        this.hasAnswerPhone=hasAnswerPhone;
     }
 }

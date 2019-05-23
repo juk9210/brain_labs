@@ -10,11 +10,13 @@ public class Oven extends AbstractMulticooker {
     void powerOff() {
         super.powerOff();
     }
+
     @Override
-    void cook(){
+    void cook() {
         System.out.println("Cook a pie");
     }
-    void initTimer(int time){
-        System.out.println("Set the cooking time: "+time);
+
+    void initTimer(int time) {
+        System.out.println("Set the cooking time: " + time);
     }
 }

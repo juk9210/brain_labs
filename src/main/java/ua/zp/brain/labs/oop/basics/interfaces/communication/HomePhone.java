@@ -1,11 +1,7 @@
 package ua.zp.brain.labs.oop.basics.interfaces.communication;
 
-public class HomePhone implements Caller {
-
-    @Override
+class HomePhone implements Caller {
     public void call(String contact) {
-        System.out.println("Press buttons");
-        System.out.println("Call my mom!");
+        System.out.println("Pick up the phone,dial the number and call - "+contact);
     }
-
 }
