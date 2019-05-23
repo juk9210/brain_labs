@@ -1,5 +1,5 @@
 package ua.zp.brain.labs.oop.basics.interfaces.communication;
 
-interface Caller {
+public interface Caller {
     void call(String contact);
 }

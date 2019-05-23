@@ -1,6 +1,6 @@
 package ua.zp.brain.labs.oop.basics.interfaces.communication;
 
-interface MailSender {
+public interface MailSender {
 
     String createMail(String mail);
 
