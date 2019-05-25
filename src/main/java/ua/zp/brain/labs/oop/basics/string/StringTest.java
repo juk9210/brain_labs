@@ -2,6 +2,10 @@ package ua.zp.brain.labs.oop.basics.string;
 
 import java.util.Scanner;
 
+/**
+ * @author
+ */
+
 public class StringTest {
     public static void main(String[] args) {
 //        PART1
@@ -47,11 +51,28 @@ public class StringTest {
         Scanner a = new Scanner(System.in);
         System.out.println("Вы ввели: ");
         String str6 = a.nextLine();
-        if(str6.equalsIgnoreCase("Запуск")){
+        if (str6.startsWith("Запуск")) {
             System.out.println("Запускаем процесс");
         }
-        if(str6.endsWith("Завершен")){
+        if (str6.toLowerCase().endsWith("завершен")) {
             System.out.println("Процесс завершен");
         }
+        if (str6.equalsIgnoreCase("ошибка")) {
+            System.out.println("Произошла ошибка");
+        }
+//    PART5
+        String str7 = "\n";
+        StringBuilder sb = new StringBuilder(100);
+        sb.append(str)
+                .append(str1)
+                .append(str2)
+                .append(str7)
+                .append(str3)
+                .append(str4)
+                .append(str5)
+                .append(str7)
+                .append(str6)
+                .reverse();
+        System.out.println(sb);
     }
 }
