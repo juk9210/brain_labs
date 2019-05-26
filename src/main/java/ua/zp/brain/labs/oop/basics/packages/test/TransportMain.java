@@ -5,6 +5,8 @@ import ua.zp.brain.labs.oop.basics.packages.transport.Passport;
 /**
  * In main method create class instance of class transport.Passport.
  * And display on data.
+ *
+ * @author Shakhov Yevhen.
  */
 
 

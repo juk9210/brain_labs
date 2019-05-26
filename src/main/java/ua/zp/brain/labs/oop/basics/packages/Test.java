@@ -4,6 +4,8 @@ import ua.zp.brain.labs.oop.basics.packages.citizen.Passport;
 
 /**
  * In main method create class instances of classes Passport.
+ *
+ * @author Shakhov Yevhen.
  */
 
 public class Test {

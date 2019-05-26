@@ -1,5 +1,11 @@
 package ua.zp.brain.labs.oop.basics.wrappers;
 
+/**
+ * In main method create operations with wrappers.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class WrapperTest {
     public static void main(String[] args) {
         Integer a1 = 20;

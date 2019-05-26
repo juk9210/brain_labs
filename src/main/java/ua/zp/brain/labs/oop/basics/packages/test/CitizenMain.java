@@ -6,6 +6,8 @@ import ua.zp.brain.labs.oop.basics.packages.citizen.PassportUtil;
 /**
  * In main method create class instance of class citizen.Passport.
  * And display on data.
+ *
+ * @author Shakhov Yevhen.
  */
 
 public class CitizenMain {

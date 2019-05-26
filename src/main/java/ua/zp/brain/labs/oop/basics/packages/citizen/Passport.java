@@ -2,6 +2,7 @@ package ua.zp.brain.labs.oop.basics.packages.citizen;
 
 /**
  * Create class - Passport with private fields,and their get/set.
+ *
  * @author Shakhov Yevhen.
  */
 public class Passport {

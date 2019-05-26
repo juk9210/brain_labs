@@ -5,6 +5,7 @@ import ua.zp.brain.labs.oop.basics.packages.technics.Passport;
 /**
  * In main method create class instance of class technics.Passport.
  *
+ * @author Shakhov Yevhen.
  */
 
 
