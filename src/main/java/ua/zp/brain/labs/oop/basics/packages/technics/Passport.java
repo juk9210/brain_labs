@@ -2,6 +2,13 @@ package ua.zp.brain.labs.oop.basics.packages.technics;
 
 import java.util.Date;
 
+/**
+ * Create class - Passport with private fields,and their get/set.
+ *
+ * @author Shakhov Yevhen.
+ */
+
+
 public class Passport {
     private String brand;
     private String model;
@@ -51,6 +58,9 @@ public class Passport {
 
     private int power;
 
+    /**
+     * Do redefinition of method - toString.
+     */
     @Override
     public String toString() {
         return "Passport{" +

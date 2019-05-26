@@ -25,7 +25,7 @@ public class Library {
     }
 
     //Create a method that will return the index of an empty cell. And if the array is full, it will return -1.
-    public int search() {
+    int search() {
         for (int i = 0; i < filmList.length; i++) {
             if (filmList[i] == null) {
                 return i;

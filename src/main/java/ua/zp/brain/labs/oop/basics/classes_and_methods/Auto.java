@@ -77,15 +77,15 @@ class Auto {
     }
 
     //Add methods for this class.
-    public void turnOn() {
+    void turnOn() {
         System.out.println("Turn on headlights");
     }
 
-    public void brake() {
+    void brake() {
         System.out.println("Stop the car");
     }
 
-    public void go() {
+    void go() {
         System.out.println("Go by car");
     }
 }

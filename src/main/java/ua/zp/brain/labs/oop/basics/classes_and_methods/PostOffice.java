@@ -33,16 +33,16 @@ class PostOffice {
     }
 
     //Add methods for this class.
-    public void accept() {
+    void accept() {
         System.out.println("Reception parcel list");
     }
 
-    public void packAndShip() {
+    void packAndShip() {
         System.out.println("Packing and shipping parcel list");
     }
 
     //Create a static method for calculating the volume of the parcel
-    public static void volumeCalculation() {
+    static void volumeCalculation() {
         double length = 5;
         double height = 15;
         double width = 7;

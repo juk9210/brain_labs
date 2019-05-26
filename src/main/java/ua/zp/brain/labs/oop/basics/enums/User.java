@@ -6,10 +6,10 @@ public class User {
     private String name;
     private Role role = Role.ANONYMOUS;
 
-    public User(String login, String password, String name) {
+    public User(Role role, String password, String login) {
         this.login = login;
         this.password = password;
-        this.name = name;
+        this.role = role;
     }
 
     public String getLogin() {

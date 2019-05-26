@@ -14,7 +14,7 @@ public class MathUtil {
      * @param values values sequence
      * @return sum result.
      */
-    public static int sum(int... values) {
+    static int sum(int... values) {
         int result = 0;
         for (int a : values) {
             result += a;
@@ -28,7 +28,7 @@ public class MathUtil {
      * @param values values sequence
      * @return multiply result.
      */
-    public static int mul(int... values) {
+    static int mul(int... values) {
         int result = 1;
         for (int a : values) {
             result *= a;
@@ -42,7 +42,7 @@ public class MathUtil {
      * @param skipValue skipped value
      * @param values    values sequence
      */
-    public static void printWithSkip(int skipValue, int... values) {
+    static void printWithSkip(int skipValue, int... values) {
         for (int a : values) {
             if (a == skipValue) {
                 continue;
@@ -57,7 +57,7 @@ public class MathUtil {
      * @param interruptValue force end value
      * @param values         values sequence
      */
-    public static void printToValue(int interruptValue, int... values) {
+    static void printToValue(int interruptValue, int... values) {
         for (int a : values) {
             if (a == interruptValue) {
                 break;
@@ -72,7 +72,7 @@ public class MathUtil {
      * @param a factorial value.
      * @return factorial result of {@param a}.
      */
-    public static int factorial(int a) {
+    static int factorial(int a) {
         int result = 1;
         for (int i = 1; i <= a; i++) {
             result = result * i;
@@ -88,7 +88,7 @@ public class MathUtil {
      * @param count calc count
      * @return harmonic progression result.
      */
-    public static int harmonicProgression(int a, int q, int count) {
+    static int harmonicProgression(int a, int q, int count) {
         int result = a;
         for (int i = 0; i < count - 1; i++) {
             result *= q;
@@ -104,7 +104,7 @@ public class MathUtil {
      * @param count calc count
      * @return arithmetic progression result.
      */
-    public static int arithmeticProgression(int a, int q, int count) {
+    static int arithmeticProgression(int a, int q, int count) {
         int result = a;
         for (int i = 0; i < count - 1; i++) {
             result = result + q;

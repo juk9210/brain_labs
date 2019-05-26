@@ -80,17 +80,17 @@ public class Book {
     }
     //Add methods for this class.
 
-    public int turn(int page) {
+    int turn(int page) {
         page = 210;
         System.out.println("Open the certain page: " + page);
         return page;
     }
 
-    public void chapterList() {
+    void chapterList() {
         System.out.println("Show chapter list");
     }
 
-    public void define() {
+    void define() {
         System.out.println("This page belongs to this chapter");
     }
 

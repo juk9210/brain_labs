@@ -17,7 +17,7 @@ public class Film {
     public static final String HORRORS = "Horrors";
 
     //Create a constructor with parameters - name,duration,genre.Do console output.
-    public Film(String name, double duration, String genre) {
+    Film(String name, double duration, String genre) {
         this.name = name;
         this.duration = duration;
         this.genre = genre;

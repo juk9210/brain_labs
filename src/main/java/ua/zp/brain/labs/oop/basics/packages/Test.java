@@ -2,6 +2,10 @@ package ua.zp.brain.labs.oop.basics.packages;
 
 import ua.zp.brain.labs.oop.basics.packages.citizen.Passport;
 
+/**
+ * In main method create class instances of classes Passport.
+ */
+
 public class Test {
     public static void main(String[] args) {
         Passport ps1 = new Passport();

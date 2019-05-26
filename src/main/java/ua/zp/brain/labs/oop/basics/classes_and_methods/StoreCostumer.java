@@ -42,15 +42,15 @@ class StoreCostumer {
     }
 
     //Add methods for this class.
-    public void add() {
+    void add() {
         System.out.println("Add product to cart");
     }
 
-    public void view() {
+    void view() {
         System.out.println("View bonus accumulation");
     }
 
-    public void buy() {
+    void buy() {
         System.out.println("Buy goods");
     }
 }

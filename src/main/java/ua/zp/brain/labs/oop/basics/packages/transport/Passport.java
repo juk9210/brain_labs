@@ -1,5 +1,11 @@
 package ua.zp.brain.labs.oop.basics.packages.transport;
 
+/**
+ * Create class - Passport with private fields,and their get/set.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Passport {
     private String transportName;
     private int horsePower;
@@ -39,6 +45,9 @@ public class Passport {
 
     private int year;
 
+    /**
+     * Do redefinition of method - toString.
+     */
     @Override
     public String toString() {
         return "Passport{" +
@@ -49,8 +58,14 @@ public class Passport {
                 '}';
     }
 
+    /**
+     * Create method - changeOwner
+     *
+     * @param newOwner
+     * @return
+     */
     public Passport changeOwner(String newOwner) {
-        PassportUtil.changeOwner(newOwner,this);
+        PassportUtil.changeOwner(newOwner, this);
         return null;
     }
 
