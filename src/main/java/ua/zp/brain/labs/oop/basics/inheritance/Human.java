@@ -2,18 +2,19 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 
 import java.util.Objects;
 
+/**
+ * Create class Human.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Human {
+    /**
+     * Create private field with get/set.
+     */
     private String name;
     private String age;
     private int numberPhone;
-
-    void sayHello() {
-        System.out.println("Hello");
-    }
-
-    void sayGoodbay() {
-        System.out.println("Goodbye");
-    }
 
     public String getName() {
         return name;
@@ -39,7 +40,24 @@ public class Human {
         this.numberPhone = numberPhone;
     }
 
+    /**
+     * Create private methods - sayHello and sayGoodbye.
+     */
 
+    void sayHello() {
+        System.out.println("Hello");
+    }
+
+    void sayGoodbay() {
+        System.out.println("Goodbye");
+    }
+
+    /**
+     * Override method equals.
+     *
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -50,11 +68,21 @@ public class Human {
                 Objects.equals(age, human.age);
     }
 
+    /**
+     * Override method hashCode.
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         return Objects.hash(name, age, numberPhone);
     }
 
+    /**
+     * Override method toString.
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "Human{" +
@@ -64,6 +92,12 @@ public class Human {
                 '}';
     }
 
+    /**
+     * Create constructor with options.
+     *
+     * @param name
+     * @param numberPhone
+     */
     Human(String name, int numberPhone) {
         this.name = name;
         this.numberPhone = numberPhone;

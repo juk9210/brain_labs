@@ -2,23 +2,19 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 
 import java.util.Objects;
 
+/**
+ * Create class Employee which extends class Human.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Employee extends Human {
+    /**
+     * Create private field with get/set.
+     */
     private String dateOfReceipt;
     private int salary;
     private String prusence;
-
-    void comeToWork() {
-        System.out.println("comes to work");
-    }
-
-
-    void goForLunch() {
-        System.out.println("goes to dinner");
-    }
-
-    void toDoWork() {
-        System.out.println("does his job");
-    }
 
     public String getDateOfReceipt() {
         return dateOfReceipt;
@@ -44,7 +40,28 @@ public class Employee extends Human {
         this.prusence = prusence;
     }
 
+    /**
+     * Create methods - comeToWork, goForLunch and toDoWork.
+     */
+    void comeToWork() {
+        System.out.println("comes to work");
+    }
 
+
+    void goForLunch() {
+        System.out.println("goes to dinner");
+    }
+
+    void toDoWork() {
+        System.out.println("does his job");
+    }
+
+    /**
+     * Override method equals.
+     *
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,11 +73,21 @@ public class Employee extends Human {
                 Objects.equals(prusence, employee.prusence);
     }
 
+    /**
+     * Override method hashCode.
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), dateOfReceipt, salary, prusence);
     }
 
+    /**
+     * Override method toString.
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "Employee{" +
@@ -70,6 +97,15 @@ public class Employee extends Human {
                 '}';
     }
 
+    /**
+     * Create constructor with options.
+     *
+     * @param name
+     * @param numberPhone
+     * @param salary
+     * @param dateOfReceipt
+     * @param prusence
+     */
     Employee(String name, int numberPhone, int salary, String dateOfReceipt, String prusence) {
         super(name, numberPhone);
         this.dateOfReceipt = dateOfReceipt;

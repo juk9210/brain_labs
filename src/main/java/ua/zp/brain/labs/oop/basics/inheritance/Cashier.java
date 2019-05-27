@@ -3,7 +3,7 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 import java.util.Objects;
 
 /**
- * Create class Cashier which inherits class Employee.
+ * Create class Cashier which extends class Employee.
  *
  * @author Shakhov Yevhen.
  */

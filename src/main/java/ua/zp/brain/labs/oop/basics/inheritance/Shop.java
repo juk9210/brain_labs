@@ -1,24 +1,21 @@
 package ua.zp.brain.labs.oop.basics.inheritance;
 
+/**
+ * Create class Shop
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Shop {
+    /**
+     * Create private field with get/set.
+     */
     private String nameOfShop;
     private String address;
     private Client cl1;
     private Manager m1;
     private Cashier c1;
     private SecurityGuard s1;
-
-    private void open() {
-        System.out.println("The shop opens");
-    }
-
-    private void lunch() {
-        System.out.println("Shop closes for lunch");
-    }
-
-    void sell() {
-        System.out.println("Managers sell goods");
-    }
 
     public String getNameOfShop() {
         return nameOfShop;
@@ -68,6 +65,29 @@ public class Shop {
         this.s1 = s1;
     }
 
+    /**
+     * Create methods - open,lunch and sell.
+     */
+    private void open() {
+        System.out.println("The shop opens");
+    }
+
+    private void lunch() {
+        System.out.println("Shop closes for lunch");
+    }
+
+    void sell() {
+        System.out.println("Managers sell goods");
+    }
+
+    /**
+     * Create constructor with options.
+     *
+     * @param m1
+     * @param cl1
+     * @param c1
+     * @param s1
+     */
     private Shop(Manager m1, Client cl1, Cashier c1, SecurityGuard s1) {
         this.m1 = m1;
         this.cl1 = cl1;
@@ -75,7 +95,15 @@ public class Shop {
         this.s1 = s1;
     }
 
+    /**
+     * Сreate a method for creating instances of classes.
+     *
+     * @param args
+     */
     public static void main(String[] args) {
+        /**
+         * Create instances of classes with options - Client,Manager,Cashier,SecurityGuard and Shop.
+         */
         Client Bogdan = new Client("Bogdan", 665841542, 2154, 1520);
         Manager Ann = new Manager("Ann", 508412541, 3500, "10.01.2017",
                 "yes", "Men's clothing");
@@ -85,6 +113,9 @@ public class Shop {
                 "yes");
 
         Shop ar1 = new Shop(Ann, Bogdan, Svetlana, Oleg);
+        /**
+         * Describe the work of the store and its employees
+         */
         ar1.setNameOfShop("Arber");
         System.out.println("The name of shop - " + ar1.getNameOfShop());
         ar1.open();
@@ -114,6 +145,9 @@ public class Shop {
         Oleg.goForLunch();
         System.out.println();
 
+        /**
+         * Apply methods hashCode, equals and toString to instances of classes.
+         */
         System.out.println("hashCode of Ann: " + Ann.hashCode());
         System.out.println("hashCode of Bogdan: " + Bogdan.hashCode());
         System.out.println(Ann.equals(Bogdan));

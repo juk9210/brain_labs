@@ -2,9 +2,29 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 
 import java.util.Objects;
 
+/**
+ * Create class Manager which extends class Employee.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Manager extends Employee {
+    /**
+     * Create private field with get/set.
+     */
     private String department;
 
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    /**
+     * Create methods - consult, discounts and advise.
+     */
     private void consult() {
         System.out.println("Manager advises the client");
     }
@@ -17,6 +37,9 @@ public class Manager extends Employee {
         System.out.println("Manager advises the client");
     }
 
+    /**
+     * Override method toDoWork.
+     */
     @Override
     void toDoWork() {
         System.out.println("Manager puts the goods on the shelves");
@@ -25,15 +48,12 @@ public class Manager extends Employee {
         advise();
     }
 
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-
+    /**
+     * Override method equals.
+     *
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -43,11 +63,21 @@ public class Manager extends Employee {
         return Objects.equals(department, manager.department);
     }
 
+    /**
+     * Override method hashCode.
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), department);
     }
 
+    /**
+     * Override method toString.
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "Manager{" +
@@ -55,7 +85,17 @@ public class Manager extends Employee {
                 '}';
     }
 
-   Manager(String name, int numberPhone, int salary, String dateOfReceipt, String prusence, String departement) {
+    /**
+     * Create constructor with options.
+     *
+     * @param name
+     * @param numberPhone
+     * @param salary
+     * @param dateOfReceipt
+     * @param prusence
+     * @param departement
+     */
+    Manager(String name, int numberPhone, int salary, String dateOfReceipt, String prusence, String departement) {
         super(name, numberPhone, salary, dateOfReceipt, prusence);
         this.department = departement;
     }

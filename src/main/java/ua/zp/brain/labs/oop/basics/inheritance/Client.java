@@ -2,17 +2,18 @@ package ua.zp.brain.labs.oop.basics.inheritance;
 
 import java.util.Objects;
 
+/**
+ * Create class Client which extends class Human.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Client extends Human {
+    /**
+     * Create private field with get/set.
+     */
     private int discountCard;
     private int amountOfMoney;
-
-    void discover() {
-        System.out.println("Tell me about men's costume");
-    }
-
-    void buy() {
-        System.out.println("I want to buy this costume");
-    }
 
     public int getDiscountCard() {
         return discountCard;
@@ -30,6 +31,23 @@ public class Client extends Human {
         this.amountOfMoney = amountOfMoney;
     }
 
+    /**
+     * Create private methods - discover and buy.
+     */
+    void discover() {
+        System.out.println("Tell me about men's costume");
+    }
+
+    void buy() {
+        System.out.println("I want to buy this costume");
+    }
+
+    /**
+     * Override method equals.
+     *
+     * @param o
+     * @return
+     */
 
     @Override
     public boolean equals(Object o) {
@@ -41,11 +59,21 @@ public class Client extends Human {
                 amountOfMoney == client.amountOfMoney;
     }
 
+    /**
+     * Override method hashCode.
+     *
+     * @return
+     */
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), discountCard, amountOfMoney);
     }
 
+    /**
+     * Override method toString.
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "Client{" +
@@ -54,6 +82,14 @@ public class Client extends Human {
                 '}';
     }
 
+    /**
+     * Create constructor with options.
+     *
+     * @param name
+     * @param numberPhone
+     * @param discountCard
+     * @param amountOfMoney
+     */
     Client(String name, int numberPhone, int discountCard, int amountOfMoney) {
         super(name, numberPhone);
         this.amountOfMoney = amountOfMoney;
