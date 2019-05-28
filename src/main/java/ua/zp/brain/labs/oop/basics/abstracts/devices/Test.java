@@ -1,8 +1,22 @@
 package ua.zp.brain.labs.oop.basics.abstracts.devices;
 
+/**
+ * Create class Test.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class Test {
+    /**
+     * Create method main.
+     *
+     * @param args
+     */
 
     public static void main(String[] args) {
+        /**
+         * Create instance of class SmartPhone and organize the work of the class instance.
+         */
         SmartPhone samsung = new SmartPhone(2, "TFT", "Android");
         samsung.setName("Samsung");
         samsung.setSerial(151981);
@@ -13,7 +27,9 @@ public class Test {
         samsung.runApp();
         samsung.powerOff();
         System.out.println();
-
+        /**
+         * Create instance of class DialPhone and organize the work of the class instance.
+         */
         DialPhone saturn = new DialPhone(true);
         saturn.setName("Saturn");
         saturn.setSerial(8657);
@@ -23,7 +39,9 @@ public class Test {
         saturn.autoAnswer();
         saturn.powerOff();
         System.out.println();
-
+        /**
+         * Create instance of class Multicooker and organize the work of the class instance.
+         */
         Multicooker lg = new Multicooker();
         lg.setName("LG");
         lg.setSerial(354345);
@@ -33,7 +51,9 @@ public class Test {
         lg.cook();
         lg.powerOff();
         System.out.println();
-
+        /**
+         * Create instance of class Oven and organize the work of the class instance.
+         */
         Oven azov = new Oven();
         azov.setName("Azov");
         azov.setSerial(16516);
@@ -43,10 +63,17 @@ public class Test {
         azov.cook();
         azov.powerOff();
         System.out.println();
-
+        /**
+         *Implement the method offAll.
+         */
         offAll(samsung, lg, azov, saturn);
     }
 
+    /**
+     * Create static method offAll which turns off all devices.
+     *
+     * @param devices
+     */
     static void offAll(AbstractDevice... devices) {
         for (AbstractDevice d : devices) {
             d.powerOff();

@@ -1,6 +1,15 @@
 package ua.zp.brain.labs.oop.basics.abstracts.devices;
 
+/**
+ * Create class SmartPhone which extends Mobile.
+ *
+ * @author Shakhov Yevhen.
+ */
+
 public class SmartPhone extends Mobile {
+    /**
+     * Create private fields,and their get/set.
+     */
     private String os;
 
     public String getOs() {
@@ -11,10 +20,20 @@ public class SmartPhone extends Mobile {
         this.os = os;
     }
 
+    /**
+     * Create method runApp.
+     */
     void runApp() {
         System.out.println("Run the app");
     }
 
+    /**
+     * Create constructor with options.
+     *
+     * @param simCount
+     * @param display
+     * @param os
+     */
     SmartPhone(int simCount, String display, String os) {
         super(simCount, display);
         this.os = os;
