@@ -1,13 +1,14 @@
 package ua.zp.brain.labs.oop.basics.enums;
 
-/**Create class User.
+/**
+ * Create class User.
+ *
  * @author Shakhov Yevhen.
  */
 
 public class User {
     /**
      * Create private fields with get/set.
-     *
      */
     private String login;
     private String password;
@@ -51,6 +52,7 @@ public class User {
 
     /**
      * Create constructor with options.
+     *
      * @param role
      * @param password
      * @param login

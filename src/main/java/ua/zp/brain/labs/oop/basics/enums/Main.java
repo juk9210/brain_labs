@@ -2,13 +2,16 @@ package ua.zp.brain.labs.oop.basics.enums;
 
 import java.util.Scanner;
 
-/**Create class Main with main method.
+/**
+ * Create class Main with main method.
+ *
  * @author Shakhov Yevhen.
  */
 
 public class Main {
     /**
      * Create main method.
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -31,7 +34,7 @@ public class Main {
         /**
          * Сall the method tryLogin and wrap it in an infinite loop, for reusable sequential use.
          */
-        while (true){
+        while (true) {
             tryLogin(silpo);
         }
     }
@@ -40,6 +43,7 @@ public class Main {
      * Create static method tryLogin in which call Scanner for input login and password.Call method login for Store.
      * If the method returns true: call methods getCurrentUserRights and logout;else print in the console -
      * "Неверный логин и/или пароль".
+     *
      * @param store
      */
     static void tryLogin(Store store) {

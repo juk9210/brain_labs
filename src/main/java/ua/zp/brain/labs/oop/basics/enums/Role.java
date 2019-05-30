@@ -1,10 +1,12 @@
 package ua.zp.brain.labs.oop.basics.enums;
 
-/**Create enum Role.
+/**
+ * Create enum Role.
+ *
  * @author Shakhov Yevhen.
  */
 
-public enum  Role {
+public enum Role {
     DIRECTOR,
     ADMINISTRATOR,
     MANAGER,

@@ -1,6 +1,8 @@
 package ua.zp.brain.labs.oop.basics.enums;
 
-/**Create class Store.
+/**
+ * Create class Store.
+ *
  * @author Shakhov Yevhen.
  */
 
@@ -15,6 +17,7 @@ public class Store {
 
     /**
      * Create constructor Store with options.
+     *
      * @param nameOfStore
      * @param url
      * @param users
@@ -29,6 +32,7 @@ public class Store {
      * Create boolean method with options.In the method looking for a user whose password and login match.
      * Assign the value of this user to an authorized user.If a user is found a user with such a password and login,
      * then return true.Otherwise return false.
+     *
      * @param login
      * @param password
      * @return
@@ -64,8 +68,8 @@ public class Store {
             case ANONYMOUS:
                 System.out.println("Анонимный пользователь,может покупать товары и/или авторизироваться");
                 break;
-                default:
-                    System.out.println("ERROR");
+            default:
+                System.out.println("ERROR");
         }
     }
 
@@ -73,7 +77,7 @@ public class Store {
      * Create method logout, which assigns null to authorUser.And print in console the text -
      * Пользователь вышел из системы.
      */
-    void logout(){
+    void logout() {
         authorUser = null;
         System.out.println("Пользователь вышел из системы");
     }

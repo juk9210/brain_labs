@@ -2,13 +2,16 @@ package ua.zp.brain.labs.oop.basics.string;
 
 import java.util.Scanner;
 
-/**Create class StringTest with main method.
- *  @author Shakhov Yevhen.
+/**
+ * Create class StringTest with main method.
+ *
+ * @author Shakhov Yevhen.
  */
 
 public class StringTest {
     /**
      * Create method main.
+     *
      * @param args
      */
     public static void main(String[] args) {
