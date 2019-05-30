@@ -1,17 +1,38 @@
 package ua.zp.brain.labs.oop.basics.enums;
 
+/**Create class Store.
+ * @author Shakhov Yevhen.
+ */
+
 public class Store {
+    /**
+     * Create private fields with get/set.
+     */
     private String nameOfStore;
     private int url;
     private User[] users;
     private User authorUser;
 
+    /**
+     * Create constructor Store with options.
+     * @param nameOfStore
+     * @param url
+     * @param users
+     */
     Store(String nameOfStore, int url, User[] users) {
         this.nameOfStore = nameOfStore;
         this.url = url;
         this.users = users;
     }
 
+    /**
+     * Create boolean method with options.In the method looking for a user whose password and login match.
+     * Assign the value of this user to an authorized user.If a user is found a user with such a password and login,
+     * then return true.Otherwise return false.
+     * @param login
+     * @param password
+     * @return
+     */
     boolean login(String login, String password) {
         for (User user : users) {
             if (user.getLogin().equals(login) && user.getPassword().equals(password)) {
@@ -22,6 +43,10 @@ public class Store {
         return false;
     }
 
+    /**
+     * Create method getCurrentUserRights.Determine the current position of the user and display information
+     * about this user.
+     */
     void getCurrentUserRights() {
         switch (authorUser.getRole()) {
             case DIRECTOR:
@@ -43,6 +68,11 @@ public class Store {
                     System.out.println("ERROR");
         }
     }
+
+    /**
+     * Create method logout, which assigns null to authorUser.And print in console the text -
+     * Пользователь вышел из системы.
+     */
     void logout(){
         authorUser = null;
         System.out.println("Пользователь вышел из системы");
