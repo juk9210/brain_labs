@@ -8,7 +8,7 @@ import ua.zp.brain.labs.oop.basics.packages.citizen.Passport;
  * @author Shakhov Yevhen.
  */
 
-public class Test {
+class Test {
     public static void main(String[] args) {
         Passport ps1 = new Passport();
         ua.zp.brain.labs.oop.basics.packages.technics.Passport ps2 = new ua.zp.brain.labs.oop.basics.packages.technics.Passport();

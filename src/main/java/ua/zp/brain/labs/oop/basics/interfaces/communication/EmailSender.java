@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.interfaces.communication;
  * @author Shakhov Yevhen.
  */
 
-public interface EmailSender extends MailSender {
+interface EmailSender extends MailSender {
     /**
      * Create method editMail.
      *

@@ -6,15 +6,15 @@ package ua.zp.brain.labs.oop.basics.interfaces.communication;
  * @author Shakhov Yevhen.
  */
 
-public class Main {
+class Main {
     /**
      * Create method main.
      *
      * @param args
      */
     public static void main(String[] args) {
-        /**
-         * Create instances of classes.Describe work of instances of classes.
+        /*
+          Create instances of classes.Describe work of instances of classes.
          */
         SmartPhone nokia = new SmartPhone();
         nokia.call("Andry");

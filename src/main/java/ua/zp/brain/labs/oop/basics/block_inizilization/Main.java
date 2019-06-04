@@ -7,7 +7,7 @@ package ua.zp.brain.labs.oop.basics.block_inizilization;
  *
  * @author Shakhov Yevhen.
  */
-public class Main {
+class Main {
     public static void main(String[] args) {
         Library newLibrary = new Library("Favorite films");
         int ind = newLibrary.search();

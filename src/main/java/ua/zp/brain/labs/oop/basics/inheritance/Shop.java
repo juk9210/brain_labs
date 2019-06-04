@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.inheritance;
  * @author Shakhov Yevhen.
  */
 
-public class Shop {
+class Shop {
     /**
      * Create private field with get/set.
      */
@@ -101,8 +101,8 @@ public class Shop {
      * @param args
      */
     public static void main(String[] args) {
-        /**
-         * Create instances of classes with options - Client,Manager,Cashier,SecurityGuard and Shop.
+        /*
+          Create instances of classes with options - Client,Manager,Cashier,SecurityGuard and Shop.
          */
         Client Bogdan = new Client("Bogdan", 665841542, 2154, 1520);
         Manager Ann = new Manager("Ann", 508412541, 3500, "10.01.2017",
@@ -113,8 +113,8 @@ public class Shop {
                 "yes");
 
         Shop ar1 = new Shop(Ann, Bogdan, Svetlana, Oleg);
-        /**
-         * Describe the work of the store and its employees
+        /*
+          Describe the work of the store and its employees
          */
         ar1.setNameOfShop("Arber");
         System.out.println("The name of shop - " + ar1.getNameOfShop());
@@ -145,8 +145,8 @@ public class Shop {
         Oleg.goForLunch();
         System.out.println();
 
-        /**
-         * Apply methods hashCode, equals and toString to instances of classes.
+        /*
+          Apply methods hashCode, equals and toString to instances of classes.
          */
         System.out.println("hashCode of Ann: " + Ann.hashCode());
         System.out.println("hashCode of Bogdan: " + Bogdan.hashCode());

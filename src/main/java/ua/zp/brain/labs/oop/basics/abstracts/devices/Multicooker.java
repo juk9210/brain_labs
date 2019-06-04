@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.abstracts.devices;
  * @author Shakhov Yevhen.
  */
 
-public class Multicooker extends AbstractMulticooker {
+class Multicooker extends AbstractMulticooker {
     /**
      * Override method powerOn.
      */

@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.block_inizilization;
  *
  * @author Shakhov Yevhen.
  */
-public class Film {
+class Film {
     //Describe the private fields
     private String name;
     private double duration;

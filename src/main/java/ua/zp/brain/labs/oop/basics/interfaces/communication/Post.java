@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.interfaces.communication;
  * @author Shakhov Yevhen.
  */
 
-public class Post implements MailSender {
+class Post implements MailSender {
     /**
      * Create method createMail.
      *

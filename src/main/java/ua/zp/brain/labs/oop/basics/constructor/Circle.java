@@ -7,7 +7,7 @@ package ua.zp.brain.labs.oop.basics.constructor;
  *
  * @author Shakhov Yevhen.
  */
-public class Circle {
+class Circle {
     //Describe private fields
     private double radius;
     private double circumference;

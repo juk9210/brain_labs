@@ -1,6 +1,6 @@
 package ua.zp.brain.labs.oop.basics.exceptions;
 
-public class ArrayExceptionTest {
+class ArrayExceptionTest {
     public static void main(String[] args) {
         int arr [] = {5,1,3,7,9,6};
         printArray(arr,5,9);

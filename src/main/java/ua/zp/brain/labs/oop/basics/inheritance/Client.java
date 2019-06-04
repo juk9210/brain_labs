@@ -8,7 +8,7 @@ import java.util.Objects;
  * @author Shakhov Yevhen.
  */
 
-public class Client extends Human {
+class Client extends Human {
     /**
      * Create private field with get/set.
      */

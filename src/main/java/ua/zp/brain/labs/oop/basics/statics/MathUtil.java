@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.statics;
  *
  * @author Shakhov Yevhen.
  */
-public class MathUtil {
+class MathUtil {
 
     /**
      * Sum of several values.

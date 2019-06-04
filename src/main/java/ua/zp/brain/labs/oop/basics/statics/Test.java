@@ -1,13 +1,15 @@
 package ua.zp.brain.labs.oop.basics.statics;
+
+
+import static ua.zp.brain.labs.oop.basics.statics.MathUtil.*;
+
 /**
  * Check methods of class MathUtil
  *
  * @author Shakhov Yevhen.
  */
 
-import static ua.zp.brain.labs.oop.basics.statics.MathUtil.*;
-
-public class Test {
+class Test {
 
     public static void main(String[] args) {
 

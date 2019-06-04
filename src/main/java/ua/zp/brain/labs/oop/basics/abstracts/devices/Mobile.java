@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.abstracts.devices;
  * @author Shakhov Yevhen.
  */
 
-public class Mobile extends AbstractPhone {
+class Mobile extends AbstractPhone {
     /**
      * Create private fields,and their get/set.
      */

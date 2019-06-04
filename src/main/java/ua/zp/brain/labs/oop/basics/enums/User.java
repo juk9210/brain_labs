@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.enums;
  * @author Shakhov Yevhen.
  */
 
-public class User {
+class User {
     /**
      * Create private fields with get/set.
      */

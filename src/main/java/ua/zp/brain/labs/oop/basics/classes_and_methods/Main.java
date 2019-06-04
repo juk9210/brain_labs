@@ -11,7 +11,7 @@ import static ua.zp.brain.labs.oop.basics.classes_and_methods.StoreCostumer.getN
  * @author Shakhov Yevhen.
  */
 
-public class Main {
+class Main {
     public static void main(String[] args) {
         //Create a Book class object
         Book book = new Book();

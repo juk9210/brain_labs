@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.block_inizilization;
  *
  * @author Shakhov Yevhen.
  */
-public class Library {
+class Library {
     //Create private fields
     private String libName;
     private final Film[] filmList;
@@ -20,7 +20,7 @@ public class Library {
     }
 
     //Create a constructor with parameter - LibName.Do console output - Library successfully created.
-    public Library(String libName) {
+    Library(String libName) {
         System.out.println("Библиотека " + libName + " успешно создана");
     }
 
@@ -43,7 +43,7 @@ public class Library {
         this.libName = libName;
     }
 
-    public Film[] getFilmList() {
+    Film[] getFilmList() {
         return filmList;
     }
 }

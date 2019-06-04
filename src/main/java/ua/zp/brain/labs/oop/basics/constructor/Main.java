@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.constructor;
  *
  * @author Shakhov Yevhen.
  */
-public class Main {
+class Main {
     public static void main(String[] args) {
         Circle circle = new Circle(15, "red");
         System.out.println("Circumference: " + circle.getCircumference() + "\tSquare: " + circle.getSquare() + "\tColour: "

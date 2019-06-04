@@ -7,7 +7,7 @@ package ua.zp.brain.labs.oop.basics.constructor;
  *
  * @author Shakhov Yevhen.
  */
-public class Pizza {
+class Pizza {
     private String name;
     private String composition;
     private double cost;

@@ -8,7 +8,7 @@ import java.util.Objects;
  * @author Shakhov Yevhen.
  */
 
-public class Human {
+class Human {
     /**
      * Create private field with get/set.
      */

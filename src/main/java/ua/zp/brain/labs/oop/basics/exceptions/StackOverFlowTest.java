@@ -2,7 +2,7 @@ package ua.zp.brain.labs.oop.basics.exceptions;
 
 import java.io.IOException;
 
-public class StackOverFlowTest {
+class StackOverFlowTest {
     static int count;
     static void test() {
         try {

@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.inheritance;
  * @author Shakhov Yevhen.
  */
 
-public class SecurityGuard extends Employee {
+class SecurityGuard extends Employee {
     /**
      * Create method talk.
      */

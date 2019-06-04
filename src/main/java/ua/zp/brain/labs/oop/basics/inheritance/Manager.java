@@ -8,7 +8,7 @@ import java.util.Objects;
  * @author Shakhov Yevhen.
  */
 
-public class Manager extends Employee {
+class Manager extends Employee {
     /**
      * Create private field with get/set.
      */

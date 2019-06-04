@@ -1,6 +1,6 @@
 package ua.zp.brain.labs.oop.basics.exceptions;
 
-public class UserBank {
+class UserBank {
     public static void main(String[] args) {
         try{
             MoneyTransactionUtil.sendTo(124,122,-54);

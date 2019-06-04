@@ -8,31 +8,31 @@ import java.util.Scanner;
  * @author Shakhov Yevhen.
  */
 
-public class Main {
+class Main {
     /**
      * Create main method.
      *
      * @param args
      */
     public static void main(String[] args) {
-        /**
-         * Create five instances of class User.
+        /*
+          Create five instances of class User.
          */
         User bogdan = new User(Role.DIRECTOR, "123", "bad");
         User alex = new User(Role.ADMINISTRATOR, "321", "good");
         User ann = new User(Role.MANAGER, "555", "sad");
         User oleg = new User(Role.CUSTOMER, "999", "red");
         User sasha = new User(Role.ANONYMOUS, "159", "green");
-        /**
-         * Create an array in which enter instances of class User.
+        /*
+          Create an array in which enter instances of class User.
          */
         User[] users = {bogdan, alex, ann, oleg, sasha};
-        /**
-         * Create instances of class Store.
+        /*
+          Create instances of class Store.
          */
         Store silpo = new Store("Silpo", 6515131, users);
-        /**
-         * Сall the method tryLogin and wrap it in an infinite loop, for reusable sequential use.
+        /*
+          Сall the method tryLogin and wrap it in an infinite loop, for reusable sequential use.
          */
         while (true) {
             tryLogin(silpo);

@@ -70,7 +70,7 @@ class Game {
          * @param name
          * @param genre
          */
-        GameDisk(String name, Genre genre, String description) {
+        private GameDisk(String name, Genre genre, String description) {
             this.description = description;
             this.data = new Game(name, genre, Type.PHYSICAL);
         }
@@ -108,19 +108,6 @@ class Game {
         private VirtualGame(String name, Genre genre) {
             this.data = new Game(name, genre, Type.VIRTUAL);
         }
-
-        /**
-         * Create static method getVirtualGame with parameters.Create instance of class VirtualGame and return this
-         * instance.
-         *
-         * @param name
-         * @param genre
-         * @return
-         */
-        static VirtualGame getVirtualGame(String name, Genre genre) {
-            VirtualGame virtual = new VirtualGame(name,genre);
-            return virtual;
-        }
     }
 
     /**
@@ -134,5 +121,17 @@ class Game {
     static GameDisk getDisk(String name, Genre genre, String description) {
         GameDisk disk = new GameDisk(name,genre,description);
         return disk;
+    }
+    /**
+     * Create static method getVirtualGame with parameters.Create instance of class VirtualGame and return this
+     * instance.
+     *
+     * @param name
+     * @param genre
+     * @return
+     */
+    static VirtualGame getVirtualGame(String name, Genre genre) {
+        VirtualGame virtual = new VirtualGame(name,genre);
+        return virtual;
     }
 }

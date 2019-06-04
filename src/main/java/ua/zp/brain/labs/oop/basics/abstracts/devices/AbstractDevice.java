@@ -6,7 +6,7 @@ package ua.zp.brain.labs.oop.basics.abstracts.devices;
  * @author Shakhov Yevhen.
  */
 
-public abstract class AbstractDevice {
+abstract class AbstractDevice {
     /**
      * Create private fields,and their get/set.
      */

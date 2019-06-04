@@ -5,7 +5,7 @@ package ua.zp.brain.labs.oop.basics.constructor;
  *
  * @author Shakhov Yevhen.
  */
-public class Pizzeria {
+class Pizzeria {
     public static void main(String[] args) {
         System.out.println("Menu of pizza: ");
         Pizza[] menu = new Pizza[4];

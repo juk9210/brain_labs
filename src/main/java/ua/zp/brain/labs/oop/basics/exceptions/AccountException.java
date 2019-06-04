@@ -1,5 +1,5 @@
 package ua.zp.brain.labs.oop.basics.exceptions;
 
-public class AccountException extends Exception{
+class AccountException extends Exception{
 
 }

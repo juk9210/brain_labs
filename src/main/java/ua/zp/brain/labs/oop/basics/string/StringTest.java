@@ -15,8 +15,8 @@ public class StringTest {
      * @param args
      */
     public static void main(String[] args) {
-        /**
-         * Create arbitrary strings in different ways.
+        /*
+          Create arbitrary strings in different ways.
          */
         String str = "Hello";
 
@@ -30,9 +30,9 @@ public class StringTest {
 
         StringBuilder builder = new StringBuilder("a");
         String str4 = new String(builder);
-        /**
-         * Create string - "Апельсин,Яблоко,Гранат,Груша".Derive all the names of the fruits in an array using the
-         * method - split.
+        /*
+          Create string - "Апельсин,Яблоко,Гранат,Груша".Derive all the names of the fruits in an array using the
+          method - split.
          */
         String fruit = "Апельсин,Яблоко,Гранат,Груша";
         String[] arr1;
@@ -41,8 +41,8 @@ public class StringTest {
             System.out.print(arr1[i] + " ");
         }
         System.out.println();
-        /**
-         * Find and print the longest name of the fruit in lower case.
+        /*
+          Find and print the longest name of the fruit in lower case.
          */
         int max = 0;
         int maxi = -1;
@@ -53,25 +53,25 @@ public class StringTest {
             }
         }
         System.out.println(arr1[maxi].toLowerCase());
-        /**
-         * Create abbreviated name of the fruit.
+        /*
+          Create abbreviated name of the fruit.
          */
         System.out.println(arr1[maxi].toLowerCase().substring(0, 3));
 
-        /**
-         * Create new string - " Я_новая_строка ".Print it without underscore.
+        /*
+          Create new string - " Я_новая_строка ".Print it without underscore.
          */
         String str5 = " Я_новая_строка   ";
         System.out.println(str5.trim().replace('_', ' '));
 
-        /**
-         * Create Scanner to enter text.
+        /*
+          Create Scanner to enter text.
          */
         Scanner a = new Scanner(System.in);
         System.out.println("Вы ввели: ");
         String str6 = a.nextLine();
-        /**
-         * Add three checks on the entered text.
+        /*
+          Add three checks on the entered text.
          */
         if (str6.startsWith("Запуск")) {
             System.out.println("Запускаем процесс");
@@ -83,9 +83,9 @@ public class StringTest {
             System.out.println("Произошла ошибка");
         }
 
-        /**
-         * Create StringBuilder.Add to it all previously created strings with transfer yo a new line after every
-         * third string.After, turn everything back on before.Print in console.
+        /*
+          Create StringBuilder.Add to it all previously created strings with transfer yo a new line after every
+          third string.After, turn everything back on before.Print in console.
          */
         String str7 = "\n";
         StringBuilder sb = new StringBuilder(100);
