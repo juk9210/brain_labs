@@ -61,7 +61,7 @@ class GameConsole {
      * @param serial
      * @param model
      */
-    GameConsole(Brand brand, Serial serial, Model model) {
+    GameConsole(Brand brand, Model model, Serial serial) {
         this.brand = brand;
         this.serial = serial;
         this.model = model;

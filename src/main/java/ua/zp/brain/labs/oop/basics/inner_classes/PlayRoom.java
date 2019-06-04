@@ -1,4 +1,5 @@
 package ua.zp.brain.labs.oop.basics.inner_classes;
+//import java.util.Comparator;
 
 /**
  * Create class PlayRoom.
@@ -26,14 +27,21 @@ class PlayRoom {
         disks[2] = Game.getDisk("Medal of Honor: Warfighter", Genre.SHOOTER, "Medal of Honor: " +
                 "Warfighter is part of a series of games of the same name and a continuation of the game Medal of " +
                 "Honor, released in 2010 and which restarted the entire series of games");
-        disks[3] = Game.getDisk("Counter Ctrike", Genre.SHOOTER, "\n" +
-                "Counter-Strike gameplay takes place in the format of a match divided into several rounds between two" +
-                " teams of players, one of which plays the role of \"terrorists\", and the other - counter-terrorist" +
-                " special forces");
+        disks[3] = Game.getDisk("Counter Ctrike", Genre.SHOOTER, "Counter-Strike gameplay takes" +
+                " place in the format of a match divided into several rounds between two teams of players, one" +
+                " of which plays the role of \"terrorists\", and the other - counter-terrorist special forces");
         /*
           Create array of games from the virtual store.
          */
         Game.VirtualGame [] virtuals = new Game.VirtualGame[4];
-        virtuals[0] = Game.getVirtualGame("")
+        virtuals[0] = Game.getVirtualGame("NHL 18",Genre.SPORTS);
+        virtuals[1]= Game.getVirtualGame("Call of Duty 4",Genre.SHOOTER);
+        virtuals[2]=Game.getVirtualGame("Resident Evil",Genre.SHOOTER);
+        virtuals[3]=Game.getVirtualGame("Far Cry",Genre.SHOOTER);
+        /*
+        Create instance of class GameConsole.
+         */
+        GameConsole sony = new GameConsole(Brand.SONY,Model.XBOX_ONE,Serial.KFV251F);
+
     }
 }
