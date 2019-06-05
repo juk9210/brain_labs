@@ -1,5 +1,8 @@
 package ua.zp.brain.labs.oop.basics.inner_classes;
-//import java.util.Comparator;
+
+
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Create class PlayRoom.
@@ -33,15 +36,34 @@ class PlayRoom {
         /*
           Create array of games from the virtual store.
          */
-        Game.VirtualGame [] virtuals = new Game.VirtualGame[4];
-        virtuals[0] = Game.getVirtualGame("NHL 18",Genre.SPORTS);
-        virtuals[1]= Game.getVirtualGame("Call of Duty 4",Genre.SHOOTER);
-        virtuals[2]=Game.getVirtualGame("Resident Evil",Genre.SHOOTER);
-        virtuals[3]=Game.getVirtualGame("Far Cry",Genre.SHOOTER);
+        Game.VirtualGame[] virtuals = new Game.VirtualGame[4];
+        virtuals[0] = Game.getVirtualGame("NHL 18", Genre.SPORTS, 3);
+        virtuals[1] = Game.getVirtualGame("Call of Duty 4", Genre.SHOOTER, 5);
+        virtuals[2] = Game.getVirtualGame("Resident Evil", Genre.SHOOTER, 4);
+        virtuals[3] = Game.getVirtualGame("Far Cry", Genre.SHOOTER, 2);
         /*
         Create instance of class GameConsole.
          */
-        GameConsole sony = new GameConsole(Brand.SONY,Model.XBOX_ONE,Serial.KFV251F);
-
+        GameConsole sony = new GameConsole(Brand.SONY, Model.XBOX_ONE, Serial.KFV251F);
+        /*
+        Using built-in classes - Arrays and Comparator, and their methods - sort() and compare sort array of games
+        on physical media by genre.Apply compareTo.After,output this array to console with method toString().
+         */
+        Arrays.sort(disks, new Comparator<Game.GameDisk>() {
+            public int compare(Game.GameDisk o1, Game.GameDisk o2) {
+                return o1.getData().getGenre().compareTo(o2.getData().getGenre());
+            }
+        });
+        System.out.println(Arrays.toString(disks));
+        /*
+        Using built-in classes - Arrays and Comparator, and their methods - sort() and compare sort array of games
+         from the virtual store by rating.Apply Integer.compare.After,output this array to console with method toString().
+         */
+        Arrays.sort(virtuals, new Comparator<Game.VirtualGame>() {
+            public int compare(Game.VirtualGame o1, Game.VirtualGame o2) {
+                return Integer.compare(o1.getRating(), o2.getRating());
+            }
+        });
+        System.out.println(Arrays.toString(virtuals));
     }
 }

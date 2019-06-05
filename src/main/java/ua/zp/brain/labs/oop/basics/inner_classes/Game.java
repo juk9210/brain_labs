@@ -74,6 +74,19 @@ class Game {
             this.description = description;
             this.data = new Game(name, genre, Type.PHYSICAL);
         }
+
+        /**
+         * Override method toString for static class GameDisk.
+         *
+         * @return
+         */
+        @Override
+        public String toString() {
+            return "GameDisk{" +
+                    "description='" + description + '\'' +
+                    ", data=" + data +
+                    '}';
+        }
     }
 
     /**
@@ -105,8 +118,22 @@ class Game {
          * @param name
          * @param genre
          */
-        private VirtualGame(String name, Genre genre) {
+        private VirtualGame(String name, Genre genre, int rating) {
+            this.rating = rating;
             this.data = new Game(name, genre, Type.VIRTUAL);
+        }
+
+        /**
+         * Override method toString for static class VirtualGame.
+         *
+         * @return
+         */
+        @Override
+        public String toString() {
+            return "VirtualGame{" +
+                    "rating=" + rating +
+                    ", data=" + data +
+                    '}';
         }
     }
 
@@ -119,9 +146,10 @@ class Game {
      * @return
      */
     static GameDisk getDisk(String name, Genre genre, String description) {
-        GameDisk disk = new GameDisk(name,genre,description);
+        GameDisk disk = new GameDisk(name, genre, description);
         return disk;
     }
+
     /**
      * Create static method getVirtualGame with parameters.Create instance of class VirtualGame and return this
      * instance.
@@ -130,8 +158,22 @@ class Game {
      * @param genre
      * @return
      */
-    static VirtualGame getVirtualGame(String name, Genre genre) {
-        VirtualGame virtual = new VirtualGame(name,genre);
+    static VirtualGame getVirtualGame(String name, Genre genre, int rating) {
+        VirtualGame virtual = new VirtualGame(name, genre, rating);
         return virtual;
+    }
+
+    /**
+     * Override method toString for class Game.
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Game{" +
+                "name='" + name + '\'' +
+                ", genre=" + genre +
+                ", type=" + type +
+                '}';
     }
 }
