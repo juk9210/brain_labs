@@ -66,4 +66,16 @@ class NumericData extends AbstractData implements Storable<Number> {
     public Type getType() {
         return null;
     }
+
+    /**
+     * Override method toString.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "NumericData{" +
+                "type=" + type +
+                ", data=" + data +
+                '}';
+    }
 }

@@ -28,8 +28,5 @@ class Main {
         System.out.println(DocumentProcessorUtil.convert(xml));
         System.out.println(DocumentProcessorUtil.convert(bin));
         System.out.println(DocumentProcessorUtil.convert(num));
-        System.out.println(xml.getData());
-        System.out.println(Arrays.toString(bin.getData()));
-        System.out.println(num.getData());
     }
 }

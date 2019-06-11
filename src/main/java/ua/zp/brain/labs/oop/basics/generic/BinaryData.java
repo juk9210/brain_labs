@@ -66,4 +66,16 @@ class BinaryData extends AbstractData implements Storable<byte[]> {
     public Type getType() {
         return null;
     }
+
+    /**
+     * Override method toString.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "BinaryData{" +
+                "type=" + type +
+                ", data=" + Arrays.toString(data) +
+                '}';
+    }
 }

@@ -45,4 +45,16 @@ class StringData extends AbstractData {
     String convertToString() {
         return null;
     }
+
+    /**
+     * Override method toString.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "StringData{" +
+                "data='" + data + '\'' +
+                ", type=" + type +
+                '}';
+    }
 }

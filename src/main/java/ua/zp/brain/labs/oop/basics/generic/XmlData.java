@@ -66,4 +66,15 @@ class XmlData extends AbstractData implements Storable<String> {
         return null;
     }
 
+    /**
+     * Override method toString.
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "XmlData{" +
+                "type=" + type +
+                ", data='" + data + '\'' +
+                '}';
+    }
 }
