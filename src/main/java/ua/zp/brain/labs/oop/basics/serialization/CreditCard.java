@@ -6,7 +6,7 @@ public class CreditCard implements Serializable {
     private CardType cardType;
     private String bankName;
     private String cardNumber;
-    private  transient String exp;
+    private transient String exp;
     private transient int cvv;
 
     public CreditCard(CardType cardType, String bankName, String cardNumber, String exp, int cvv) {
