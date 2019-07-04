@@ -29,6 +29,7 @@ class BasicWork {
         list2.add("Dog");
         list2.add("Cat");
         list2.add("Parrot");
+
         list2.add("Fish");
         System.out.println("List2: "+list2.toString());
         /*

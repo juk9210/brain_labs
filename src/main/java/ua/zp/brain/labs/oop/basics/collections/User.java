@@ -7,7 +7,7 @@ import java.util.Objects;
  * @author Shakhov Yevhen.
  */
 
-public class User {
+class User {
     /*
 
      */
@@ -21,7 +21,7 @@ public class User {
      * @param age
      * @param phone
      */
-    public User(String name, int age, int phone) {
+    private User(String name, int age, int phone) {
         this.name = name;
         this.age = age;
         this.phone = phone;
