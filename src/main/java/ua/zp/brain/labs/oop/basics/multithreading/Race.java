@@ -4,8 +4,10 @@ import static java.lang.Thread.sleep;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicLong;
 
 class Race {
+    public static AtomicLong startRaceTime;
     public static void main(String[] args) throws InterruptedException {
         final int distance = 500;
         CountDownLatch a = new CountDownLatch(4);
@@ -34,6 +36,7 @@ class Race {
                     System.out.println("1...");
                     sleep(500);
                     System.out.println("GO!!!");
+                    startRaceTime = new AtomicLong(System.currentTimeMillis());
                     for (Thread thr : cars) {
                         thr.start();
                     }
